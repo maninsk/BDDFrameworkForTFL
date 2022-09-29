@@ -1,7 +1,7 @@
 
 **Automation Framework :**  I have created this framework to give an idea about my design approach and covered as much as possible within the limited time frame.
 There may be improvement areas in the future and happy to brainstorm on the same.
-I have integrated this solution with Azure DevOps pipeline for build and run.
+I have integrated this solution with Azure DevOps pipeline for contionous integration purpose.
 
 **Language :** C#
 
