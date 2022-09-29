@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tfl.Core.Web.Acceptancetests", "Tfl.core.test.framework\Tfl.Core.Web.Acceptancetests\Tfl.Core.Web.Acceptancetests.csproj", "{08317047-2E05-47C9-8FEB-7710FF7E17E1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tfl.Core.Api.Acceptancetests", "Atlassian.Core.Api.Acceptancetests\Tfl.Core.Api.Acceptancetests.csproj", "{42DDAB31-5DBE-4B47-A0BE-EE7B13A5B2D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08317047-2E05-47C9-8FEB-7710FF7E17E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08317047-2E05-47C9-8FEB-7710FF7E17E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08317047-2E05-47C9-8FEB-7710FF7E17E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08317047-2E05-47C9-8FEB-7710FF7E17E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42DDAB31-5DBE-4B47-A0BE-EE7B13A5B2D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42DDAB31-5DBE-4B47-A0BE-EE7B13A5B2D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42DDAB31-5DBE-4B47-A0BE-EE7B13A5B2D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42DDAB31-5DBE-4B47-A0BE-EE7B13A5B2D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5336D4F-B4CE-4A3C-989C-74CE3AE6D5CF}
+	EndGlobalSection
+EndGlobal
