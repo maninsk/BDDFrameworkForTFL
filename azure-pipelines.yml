@@ -14,4 +14,4 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
-    projects: '**/Tfl.Core.Web.Acceptancetests/*.csproj'
+    projects: '**/BDDFrameworkForTFL/*.csproj'
