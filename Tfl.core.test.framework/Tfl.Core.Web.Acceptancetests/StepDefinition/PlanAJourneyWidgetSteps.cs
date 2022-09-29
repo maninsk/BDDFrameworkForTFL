@@ -10,7 +10,7 @@
     {
         private DriverFacade _driverFacade;
         private Pages _pages;
-        private Logger _logger;
+        private readonly Logger _logger;
 
         public PlanAJourneyWidgetSteps(Pages pages, DriverFacade driverFacade)
         {

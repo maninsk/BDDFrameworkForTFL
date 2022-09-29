@@ -9,10 +9,7 @@
     public  class PlanAJourneyPage
     {
         private DriverFacade _driverFacade;
-
         private WebDriverWait wait;
-
-        private IWebDriver driver;
 
 
         public PlanAJourneyPage(DriverFacade driverFacade)
@@ -22,25 +19,25 @@
 
         }
 
-        [FindsBy(How = How.XPath, Using = "username")]
+        [FindsBy(How = How.XPath, Using = "//*[text()='Journey results']")]
         protected IWebElement JourneyResultsElement { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "username")]
+        [FindsBy(How = How.XPath, Using = "//*[text()='Earlier journeys']")]
         protected IWebElement EarlierJourneysElement { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "username")]
+        [FindsBy(How = How.XPath, Using = "//*[text()='Later journeys']")]
         protected IWebElement LaterJourneysElement { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "username")]
+        [FindsBy(How = How.XPath, Using = "//*[text()='Edit journey']")]
         protected IWebElement EditJourneyElement { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "username")]
+        [FindsBy(How = How.Id, Using = "InputFrom")]
         protected IWebElement EditJourneyFromElement { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "username")]
+        [FindsBy(How = How.Id, Using = "ToFrom")]
         protected IWebElement EditJourneyToElement { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "username")]
+        [FindsBy(How = How.Id, Using = "plan-journey-button")]
         protected IWebElement UpdateJourneyElement { get; set; }
 
         public void ClickOnEditJourney()

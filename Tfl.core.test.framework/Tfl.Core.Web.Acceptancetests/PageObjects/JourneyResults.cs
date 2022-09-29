@@ -1,6 +1,5 @@
 ﻿namespace Tfl.Core.Web.Acceptancetests.PageObjects
 {
-    using OpenQA.Selenium.Support.UI;
     using Tfl.Core.Web.Acceptancetests.Helpers;
     using OpenQA.Selenium;
     using SeleniumExtras.PageObjects;
@@ -9,23 +8,19 @@
     {
         private DriverFacade _driverFacade;
 
-        private WebDriverWait wait;
-
-        private IWebDriver driver;
-
         public JourneyResults(DriverFacade driverFacade)
         {
             _driverFacade = driverFacade;
             
         }
 
-        [FindsBy(How = How.XPath, Using = "username")]
+        [FindsBy(How = How.XPath, Using = "//div[1]/span[2]/strong[1]")]
         protected IWebElement JourneyResultsFromElement { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "username")]
+        [FindsBy(How = How.XPath, Using = "//div[1]/span[2]/strong[2]")]
         protected IWebElement JourneyResultsToElement { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "username")]
+        [FindsBy(How = How.XPath, Using = "//span[@class='notranslate']")]
         protected IWebElement JourneyResultsValidationMsgElement { get; set; }
 
         public string GetFromValue()

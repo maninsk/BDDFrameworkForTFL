@@ -9,7 +9,6 @@
     {
         private DriverFacade _driverFacade;
         private Pages _pages;
-        private Logger _logger;
 
         public CommonStepDefinition(Pages page)
         {

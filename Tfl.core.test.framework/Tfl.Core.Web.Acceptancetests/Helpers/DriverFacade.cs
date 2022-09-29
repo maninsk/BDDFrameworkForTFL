@@ -5,22 +5,21 @@
     using OpenQA.Selenium;
     using OpenQA.Selenium.Chrome;
     using OpenQA.Selenium.IE;
-    using OpenQA.Selenium.Support.UI;
+
 
    public  class DriverFacade
     {
         private IWebDriver _driver;
-        private WebDriverWait wait;
-
-        public IWebDriver getDriver(string driverType)
+        
+        public IWebDriver GetDriver(string driverType)
         {
             if (_driver == null)
             {
-                setDriver(driverType);
+                SetDriver(driverType);
             }
             return _driver;
         }
-        private void setDriver(string driverType)
+        private void SetDriver(string driverType)
         {
             switch (driverType)
             {
