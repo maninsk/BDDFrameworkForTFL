@@ -10,8 +10,8 @@
     public class BasePage
     {
         protected WebDriverWait wait;
+        private readonly DriverFacade _driverFacade;
         private IWebDriver _driver;
-        private DriverFacade _driverFacade;
 
 
         public BasePage(DriverFacade driverFacade)
@@ -19,7 +19,7 @@
             this._driverFacade = driverFacade;
 
         }
-        public void waitAndClick(IWebElement element)
+        public void WaitAndClick(IWebElement element)
         {
             //wait.Until(ExpectedConditions.ElementToBeClickable(element));
             element.Click();

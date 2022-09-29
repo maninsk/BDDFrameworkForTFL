@@ -10,9 +10,6 @@
     public class HomePage : BasePage
     {
         private DriverFacade _driverFacade;
-
-        private WebDriverWait wait;
-
         private IWebDriver driver;
 
 
@@ -23,28 +20,28 @@
 
         }
 
-        [FindsBy(How = How.XPath, Using = "username")]
+        [FindsBy(How = How.XPath, Using = "//div[@class='logo']")]
         protected IWebElement HomeElement { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "username")]
+        [FindsBy(How = How.XPath, Using = "//*[text()='Plan a journey']")]
         protected IWebElement PlanAJourneyElement { get; set; }
        
-        [FindsBy(How = How.XPath, Using = "username")]
+        [FindsBy(How = How.Id, Using = "InputFrom")]
         protected IWebElement PlanAJourneyFromElement { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "username")]
+        [FindsBy(How = How.Id, Using = "InputTo")]
         protected IWebElement PlanAJourneyToElement { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "username")]
+        [FindsBy(How = How.Id, Using = "plan-journey-button")]
         protected IWebElement PlanMyJourneyElement { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "username")]
+        [FindsBy(How = How.Id, Using = "InputFrom-error")]
         protected IWebElement InputFromErrorElement { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "username")]
+        [FindsBy(How = How.Id, Using = "InputTo-error")]
         protected IWebElement InputToErrorElement { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "username")]
+        [FindsBy(How = How.XPath, Using = "//a[@href='#jp-recent']")]
         protected IWebElement RecentElement { get; set; }
 
         public void IsHomeTabEnabled()
